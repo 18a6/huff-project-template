@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: Unlicense
 pragma solidity ^0.8.15;
 
+// import "../src/SimpleStore.huff";
 import "foundry-huff/HuffDeployer.sol";
 import "forge-std/Test.sol";
 import "forge-std/console.sol";
@@ -25,5 +26,6 @@ contract SimpleStoreTest is Test {
 
 interface SimpleStore {
     function setValue(uint256) external;
+
     function getValue() external returns (uint256);
 }
